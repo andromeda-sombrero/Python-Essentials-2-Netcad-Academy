@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
-""" module: iota """
+"""module: iota"""
+
 
 def funI():
     return "Iota"
@@ -8,4 +9,3 @@ def funI():
 
 if __name__ == "__main__":
     print("I prefer to be a module.")
-   

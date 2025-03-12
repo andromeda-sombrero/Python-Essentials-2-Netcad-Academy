@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
-""" module: beta """
+"""module: beta"""
+
 
 def funB():
     return "Beta"
@@ -8,5 +9,3 @@ def funB():
 
 if __name__ == "__main__":
     print("I prefer to be a module.")
-
-    

@@ -9,4 +9,4 @@ This repository demonstrates how to create your very own python package.
 4. press enter to execute the program.
 
 ~ The purpose of this module is to showcase how python handles imports statements. It also shows how you can import deeply nested functions in your very own package that you may create.
-What stood out for me was that without the "__init__.py" file in the packages the import statements fail aswell as if I don't append the packages directory to the main2.py file. ~git
+What stood out for me was that without the "__init__.py" file in the packages the import statements fail aswell as if I don't append the packages directory to the main2.py file. ~

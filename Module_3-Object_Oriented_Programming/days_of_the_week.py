@@ -31,7 +31,6 @@ class WeekDayError(Exception):
 
 class Weeker:
     __weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-    __chosen_day = ""
 
     def __init__(self, day):
         if day not in Weeker.__weekdays:
@@ -40,18 +39,13 @@ class Weeker:
             self.day = day
 
     def __str__(self):
-        return self.day
+        return str(self.day)
 
     def add_days(self, n):
-        # Weeker.__chosen_day = Weeker.__weekdays[7 % len(Weeker.__weekdays)]
-        # return Weeker.__chosen_day
-        pass
+        self.day = Weeker.__weekdays[n % 7]
 
-    def subtract_days(self, n):
-        # Weeker.__chosen_day = Weeker.__weekdays[-(n % len(Weeker.__weekdays))]
-        # return Weeker.__chosen_day
-        pass
-
+    # def subtract_days(self, n):
+    # self.day = Weeker.__weekdays(n % 7)
 
 try:
     weekday = Weeker("Mon")

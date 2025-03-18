@@ -34,24 +34,23 @@ class Weeker:
     __chosen_day = ""
 
     def __init__(self, day):
-        self.__day = day
-
-    def get_day(self):
-        if self.__day != ("Mon" or "Tue" or "Wed" or "Thu" or "Fri" or "Sat" or "Sun"):
+        if day not in Weeker.__weekdays:
             raise WeekDayError
         else:
-            return self.__day
+            self.day = day
 
     def __str__(self):
-        return Weeker.__chosen_day
+        return self.day
 
     def add_days(self, n):
-        Weeker.__chosen_day = Weeker.__weekdays[7 % len(Weeker.__weekdays)]
-        return Weeker.__chosen_day
+        # Weeker.__chosen_day = Weeker.__weekdays[7 % len(Weeker.__weekdays)]
+        # return Weeker.__chosen_day
+        pass
 
     def subtract_days(self, n):
-        Weeker.__chosen_day = Weeker.__weekdays[-(n % len(Weeker.__weekdays))]
-        return Weeker.__chosen_day
+        # Weeker.__chosen_day = Weeker.__weekdays[-(n % len(Weeker.__weekdays))]
+        # return Weeker.__chosen_day
+        pass
 
 
 try:
